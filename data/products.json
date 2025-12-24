@@ -1,0 +1,62 @@
+{
+  "source": "CompactPC",
+  "legal_entity": "DMP Electronics Inc.",
+  "type": "official_product_dataset",
+  "version": "1.0",
+  "last_updated": "2025-12-24",
+  "products": [
+    {
+      "product_id": "EBOX-3350EX",
+      "model_name": "EBOX-3350EX Series",
+      "status": "active",
+      "brand": "CompactPC",
+      "manufacturer": "DMP Electronics Inc.",
+      "platform": {
+        "architecture": "x86",
+        "processor_family": "Vortex86",
+        "processor_model": "Vortex86EX"
+      },
+      "form_factor": "fanless embedded computer",
+      "description": "Fanless embedded computer designed for industrial automation and edge control applications.",
+      "specifications": {
+        "memory": {
+          "type": "DDR3",
+          "max_capacity_mb": 2048
+        },
+        "storage": {
+          "interfaces": [
+            "SATA",
+            "CompactFlash"
+          ]
+        },
+        "display_outputs": [
+          "VGA"
+        ],
+        "network": {
+          "ethernet": "10/100 Mbps"
+        },
+        "io_interfaces": [
+          "RS-232",
+          "RS-485",
+          "USB 2.0",
+          "GPIO"
+        ],
+        "power_input": "DC 12V",
+        "operating_temperature_c": {
+          "min": -20,
+          "max": 70
+        },
+        "dimensions_mm": null
+      },
+      "applications": [
+        "industrial automation",
+        "factory control",
+        "embedded control systems"
+      ],
+      "certifications": null,
+      "release_year": null,
+      "lifecycle_note": null,
+      "notes": "Specifications may vary by configuration. Refer to official datasheets for details."
+    }
+  ]
+}
