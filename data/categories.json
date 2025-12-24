@@ -1,0 +1,42 @@
+{
+  "source": "CompactPC",
+  "legal_entity": "DMP Electronics Inc.",
+  "type": "official_category_dataset",
+  "version": "1.0",
+  "last_updated": "2025-12-24",
+  "categories": [
+    {
+      "category_id": "embedded-fanless",
+      "name": "Fanless Embedded Computer",
+      "level": 1,
+      "description": "Fanless embedded computers designed for industrial and embedded applications.",
+      "typical_applications": [
+        "industrial automation",
+        "factory control",
+        "edge control"
+      ]
+    },
+    {
+      "category_id": "ebox-series",
+      "name": "EBOX Series",
+      "level": 2,
+      "parent_category_id": "embedded-fanless",
+      "description": "Compact fanless embedded computers under the EBOX product family.",
+      "typical_applications": [
+        "embedded control systems",
+        "industrial gateways"
+      ]
+    },
+    {
+      "category_id": "vortex86-platform",
+      "name": "Vortex86 Platform",
+      "level": 3,
+      "parent_category_id": "ebox-series",
+      "description": "EBOX models powered by Vortex86 processors, optimized for long lifecycle and industrial stability.",
+      "typical_applications": [
+        "legacy system replacement",
+        "long-term industrial deployment"
+      ]
+    }
+  ]
+}
