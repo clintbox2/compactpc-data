@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CompactPC Product Schema",
+  "description": "Schema for official CompactPC first-party product data maintained by DMP Electronics Inc.",
+  "type": "object",
+  "required": [
+    "source",
+    "legal_entity",
+    "type",
+    "version",
+    "last_updated",
+    "products"
+  ],
+  "properties": {
+    "source": {
+      "type": "string",
+      "const": "CompactPC"
+    },
+    "legal_entity": {
+      "type": "string",
+      "const": "DMP Electronics Inc."
+    },
+    "type": {
+      "type": "string",
+      "const": "official_product_dataset"
+    },
+    "version": {
+      "type": "string"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "products": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/product"
+      }
+    }
+  },
+
+  "$defs": {
+    "product": {
+      "type": "object",
+      "required": [
+        "product_id",
+        "model_name",
+        "status",
+        "brand",
+        "manufacturer",
+        "platform",
+        "form_factor",
+        "specifications"
+      ],
+      "properties": {
+        "product_id": {
+          "type": "string",
+          "description": "Canonical CompactPC product identifier"
+        },
+        "model_name": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "eol", "deprecated"]
+        },
+        "brand": {
+          "type": "string",
+          "const": "CompactPC"
+        },
+        "manufacturer": {
+          "type": "string",
+          "const": "DMP Electronics Inc."
+        },
+        "platform": {
+          "type": "object",
+          "required": [
+            "architecture",
+            "processor_family",
+            "processor_model"
+          ],
+          "properties": {
+            "architecture": {
+              "type": "string",
+              "enum": ["x86", "arm"]
+            },
+            "processor_family": {
+              "type": "string"
+            },
+            "processor_model": {
+              "type": "string"
+            }
+          }
+        },
+        "form_factor": {
+          "type": "string"
+        },
+        "description": {
+          "type": ["string", "null"]
+        },
+        "specifications": {
+          "type": "object",
+          "required": [
+            "memory",
+            "storage",
+            "display_outputs",
+            "network",
+            "io_interfaces",
+            "power_input",
+            "operating_temperature_c",
+            "dimensions_mm"
+          ],
+          "properties": {
+            "memory": {
+              "type": ["object", "null"],
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "max_capacity_mb": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              }
+            },
+            "storage": {
+              "type": ["object", "null"],
+              "properties": {
+                "interfaces": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "display_outputs": {
+              "type": ["array", "null"],
+              "items": {
+                "type": "string"
+              }
+            },
+            "network": {
+              "type": ["object", "null"],
+              "properties": {
+                "ethernet": {
+                  "type": "string"
+                }
+              }
+            },
+            "io_interfaces": {
+              "type": ["array", "null"],
+              "items": {
+                "type": "string"
+              }
+            },
+            "power_input": {
+              "type": ["string", "null"]
+            },
+            "operating_temperature_c": {
+              "type": ["object", "null"],
+              "properties": {
+                "min": {
+                  "type": "integer"
+                },
+                "max": {
+                  "type": "integer"
+                }
+              }
+            },
+            "dimensions_mm": {
+              "type": ["object", "null"],
+              "properties": {
+                "width": {
+                  "type": "number"
+                },
+                "depth": {
+                  "type": "number"
+                },
+                "height": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "applications": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "string"
+          }
+        },
+        "certifications": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "string"
+          }
+        },
+        "release_year": {
+          "type": ["integer", "null"]
+        },
+        "lifecycle_note": {
+          "type": ["string", "null"]
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}
