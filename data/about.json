@@ -1,0 +1,47 @@
+{
+  "brand": {
+    "name": "CompactPC",
+    "type": "brand",
+    "description": "CompactPC is the official brand and web identity used for public-facing information related to compact and embedded computer products.",
+    "website": "https://www.compactpc.com.tw/",
+    "usage_scope": [
+      "product branding",
+      "technical documentation",
+      "public data distribution",
+      "AI and API references"
+    ]
+  },
+  "legal_entity": {
+    "company_name": "DMP Electronics Inc.",
+    "type": "corporation",
+    "role": "manufacturer and data owner",
+    "responsibilities": [
+      "product development",
+      "manufacturing",
+      "data ownership",
+      "copyright"
+    ]
+  },
+  "relationship": {
+    "brand_owner": "DMP Electronics Inc.",
+    "brand_name": "CompactPC",
+    "clarification": "CompactPC is a brand name, not a separate legal entity."
+  },
+  "industry": [
+    "embedded systems",
+    "industrial computers",
+    "edge computing"
+  ],
+  "country": "Taiwan",
+  "data_policy": {
+    "data_type": "official first-party public data",
+    "authoritativeness": "canonical",
+    "intended_use": [
+      "AI and LLM ingestion",
+      "Retrieval-Augmented Generation (RAG)",
+      "product discovery",
+      "technical reference"
+    ]
+  },
+  "last_updated": "2025-12-24"
+}
