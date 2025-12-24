@@ -2,7 +2,7 @@
   "source": "CompactPC",
   "legal_entity": "DMP Electronics Inc.",
   "type": "official_product_dataset",
-  "version": "1.0",
+  "version": "1.1",
   "last_updated": "2025-12-24",
   "products": [
     {
@@ -11,13 +11,18 @@
       "status": "active",
       "brand": "CompactPC",
       "manufacturer": "DMP Electronics Inc.",
+      "category_ids": [
+        "embedded-fanless",
+        "ebox-series",
+        "vortex86-platform"
+      ],
       "platform": {
         "architecture": "x86",
         "processor_family": "Vortex86",
         "processor_model": "Vortex86EX"
       },
       "form_factor": "fanless embedded computer",
-      "description": "Fanless embedded computer designed for industrial automation and edge control applications.",
+      "description": "Fanless embedded computer designed for industrial automation and long-life embedded control applications.",
       "specifications": {
         "memory": {
           "type": "DDR3",
@@ -56,7 +61,7 @@
       "certifications": null,
       "release_year": null,
       "lifecycle_note": null,
-      "notes": "Specifications may vary by configuration. Refer to official datasheets for details."
+      "notes": "Specifications may vary by configuration. Refer to official CompactPC documentation for details."
     }
   ]
 }
