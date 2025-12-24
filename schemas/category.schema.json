@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CompactPC Category Schema",
+  "description": "Schema for official CompactPC product category data maintained by DMP Electronics Inc.",
+  "type": "object",
+  "required": [
+    "source",
+    "legal_entity",
+    "type",
+    "version",
+    "last_updated",
+    "categories"
+  ],
+  "properties": {
+    "source": {
+      "type": "string",
+      "const": "CompactPC",
+      "description": "Brand name for public-facing data"
+    },
+    "legal_entity": {
+      "type": "string",
+      "const": "DMP Electronics Inc.",
+      "description": "Legal entity responsible for data ownership"
+    },
+    "type": {
+      "type": "string",
+      "const": "official_category_dataset",
+      "description": "Dataset classification identifier"
+    },
+    "version": {
+      "type": "string",
+      "description": "Schema or dataset version"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Last update date in ISO 8601 format (YYYY-MM-DD)"
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "description": "List of official CompactPC product categories",
+      "items": {
+        "$ref": "#/$defs/category"
+      }
+    }
+  },
+  "$defs": {
+    "category": {
+      "type": "object",
+      "required": [
+        "category_id",
+        "name",
+        "level",
+        "description"
+      ],
+      "properties": {
+        "category_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9\\-]+$",
+          "description": "Canonical category identifier (lowercase, hyphen-separated)"
+        },
+        "name": {
+          "type": "string",
+          "description": "Human-readable category name"
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Hierarchy level (1 = top-level category)"
+        },
+        "parent_category_id": {
+          "type": ["string", "null"],
+          "pattern": "^[a-z0-9\\-]+$",
+          "description": "Parent category identifier, if applicable"
+        },
+        "description": {
+          "type": "string",
+          "description": "Official description of the category"
+        },
+        "typical_applications": {
+          "type": ["array", "null"],
+          "description": "Common application scenarios for this category",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
