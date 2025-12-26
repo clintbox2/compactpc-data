@@ -34,6 +34,11 @@ DMP Industrial PC product information.
 
 ---
 
+- AI Navigation Index:  
+  https://github.com/clintbox2/compactpc-data/blob/main/AI-INDEX.md
+
+---
+
 ## Repository Structure
 
 compactpc-data/  
