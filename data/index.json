@@ -1,7 +1,7 @@
 {
   "dataset": "CompactPC Official Public Data",
   "canonical_source": "https://www.compactpc.com.tw",
-  "last_updated": "2025-01-02",
+  "last_updated": "2026-01-02",
   "files": [
     {
       "name": "products.json",
