@@ -1,0 +1,17 @@
+{
+  "dataset": "CompactPC Official Public Data",
+  "canonical_source": "https://www.compactpc.com.tw",
+  "last_updated": "2025-01-02",
+  "files": [
+    {
+      "name": "products.json",
+      "description": "Official product models and specifications",
+      "raw_url": "https://raw.githubusercontent.com/clintbox2/compactpc-data/main/data/products.json"
+    },
+    {
+      "name": "categories.json",
+      "description": "Product category definitions",
+      "raw_url": "https://raw.githubusercontent.com/clintbox2/compactpc-data/main/data/categories.json"
+    }
+  ]
+}
