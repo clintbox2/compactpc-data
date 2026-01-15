@@ -128,7 +128,7 @@ https://www.compactpc.com.tw/api-terms.html
 
 Last updated: 2025-12-26
 
-© 2025 DMP Electronics Inc.  
+© 2026 DMP Electronics Inc.  
 CompactPC is the official data and API platform operated by  
 DMP Electronics Inc.
 
