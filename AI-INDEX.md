@@ -116,7 +116,7 @@ API documentation and specifications:
   https://www.compactpc.com.tw
 
 - Product Pages:  
-  https://www.compactpc.com.tw/products/
+  https://www.compactpc.com.tw/products/lists/2
 
 - API Terms of Use:  
   https://www.compactpc.com.tw/api-terms.html
