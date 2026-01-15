@@ -1,15 +1,16 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "CompactPC Product Feed",
-  "description": "Official product feed from DMP Electronics Inc. (CompactPC)",
+  "name": "CompactPC Official Product Feed",
+  "description": "Schema.org-compatible product feed for DMP Industrial PC platforms.",
   "url": "https://github.com/clintbox2/compactpc-data",
   "numberOfItems": 1,
   "itemListElement": [
     {
       "@type": "Product",
-      "name": "EBOX-3350EX Series",
       "sku": "EBOX-3350EX",
+      "name": "EBOX-3350EX Series",
+      "description": "Fanless embedded computer designed for industrial automation and long-life embedded control applications.",
       "brand": {
         "@type": "Brand",
         "name": "CompactPC"
@@ -18,15 +19,76 @@
         "@type": "Organization",
         "name": "DMP Electronics Inc."
       },
-      "description": "Fanless embedded computer designed for industrial automation and long-life embedded control applications.",
-      "category": "embedded-fanless, ebox-series, vortex86-platform",
+      "category": [
+        "embedded-fanless",
+        "ebox-series",
+        "vortex86-platform"
+      ],
       "model": "Vortex86EX",
       "mpn": "EBOX-3350EX",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
+      "url": "https://www.compactpc.com.tw/products/children/13",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Architecture",
+          "value": "x86"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Processor Family",
+          "value": "Vortex86"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Memory Type",
+          "value": "DDR3"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Max Memory Capacity (MB)",
+          "value": "2048"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Storage Interfaces",
+          "value": "SATA, CompactFlash"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Display Outputs",
+          "value": "VGA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Ethernet",
+          "value": "10/100 Mbps"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "I/O Interfaces",
+          "value": "RS-232, RS-485, USB 2.0, GPIO"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Power Input",
+          "value": "DC 12V"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Operating Temperature (°C)",
+          "value": "-20 to 70"
+        }
+      ],
+      "application": [
+        "industrial automation",
+        "factory control",
+        "embedded control systems"
+      ],
+      "isAccessoryOrSparePartFor": null,
+      "releaseDate": null,
+      "productionDate": null,
+      "discontinuedDate": null,
+      "note": "Specifications may vary by configuration. Refer to official CompactPC documentation for details."
     }
   ]
 }
