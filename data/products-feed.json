@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "CompactPC Product Feed",
+  "description": "Official product feed from DMP Electronics Inc. (CompactPC)",
+  "url": "https://github.com/clintbox2/compactpc-data",
+  "numberOfItems": 1,
+  "itemListElement": [
+    {
+      "@type": "Product",
+      "name": "EBOX-3350EX Series",
+      "sku": "EBOX-3350EX",
+      "brand": {
+        "@type": "Brand",
+        "name": "CompactPC"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "DMP Electronics Inc."
+      },
+      "description": "Fanless embedded computer designed for industrial automation and long-life embedded control applications.",
+      "category": "embedded-fanless, ebox-series, vortex86-platform",
+      "model": "Vortex86EX",
+      "mpn": "EBOX-3350EX",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  ]
+}
