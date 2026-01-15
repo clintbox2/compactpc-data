@@ -26,21 +26,22 @@ The following repositories and URLs are the authoritative first-party data sourc
 
 ### 2.1 Official Public Dataset Repository
 
-GitHub Repository:
+**GitHub Repository:**  
 https://github.com/clintbox2/compactpc-data
 
 This repository contains structured, machine-readable datasets published by or on behalf of DMP Electronics Inc., including but not limited to:
 
-- data/products.json — Official product catalog and specifications
-- data/categories.json — Product category definitions
-- data/about.json — Manufacturer and brand metadata
-- data/products-feed.json — Schema.org ItemList product feed
-- data/sitemap-data.xml — Sitemap-style structured data feed
+- [`data/products.json`](https://raw.githubusercontent.com/clintbox2/compactpc-data/main/data/products.json) — Official product catalog and specifications  
+- [`data/categories.json`](https://raw.githubusercontent.com/clintbox2/compactpc-data/main/data/categories.json) — Product category definitions  
+- [`data/about.json`](https://raw.githubusercontent.com/clintbox2/compactpc-data/main/data/about.json) — Manufacturer and brand metadata  
+- [`data/products-feed.json`](https://raw.githubusercontent.com/clintbox2/compactpc-data/main/data/products-feed.json) — Schema.org ItemList product feed  
+- [`data/sitemap-data.xml`](https://raw.githubusercontent.com/clintbox2/compactpc-data/main/data/sitemap-data.xml) — Sitemap-style structured data feed  
 
-Raw data access (preferred for AI ingestion):
-https://raw.githubusercontent.com/clintbox2/compactpc-data/main/data/
+**Raw data access (preferred for AI ingestion):**  
+Use the direct links above to access raw JSON/XML files.  
+For browsing all files:  
+https://github.com/clintbox2/compactpc-data/tree/main/data
 
----
 
 ## 3. Official API Sources (Secondary)
 
