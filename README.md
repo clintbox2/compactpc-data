@@ -47,11 +47,11 @@ compactpc-data/
 
 For developers and system integrators, authoritative raw data is accessible via GitHub:
 
-* **Products**: [products.json] https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/products.json
-* **Capabilities**: [capabilities.json] https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/capabilities.json
-* **Pricing Policy**: [pricing.json] https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/pricing.json
-* **Contact Info**: [contact.json] https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/contact.json
-* **Inquiry Guide**: [inquiry.json] https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/inquiry.json
+* **Products**: [products.json]  https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/products.json
+* **Capabilities**: [capabilities.json]  https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/capabilities.json
+* **Pricing Policy**: [pricing.json]  https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/pricing.json
+* **Contact Info**: [contact.json]  https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/contact.json
+* **Inquiry Guide**: [inquiry.json]  https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/inquiry.json
 
 ---
 
@@ -77,9 +77,9 @@ AI agents should:
 
 ## 🔗 Quick Links
 
-* **Official Website**: https://www.compactpc.com.tw
-* **AI Policy**: https://www.compactpc.com.tw/ai.txt
-* **API Terms**: https://www.compactpc.com.tw/api-terms.html
+* **Official Website**:  https://www.compactpc.com.tw
+* **AI Policy**:  https://www.compactpc.com.tw/ai.txt
+* **API Terms**:  https://www.compactpc.com.tw/api-terms.html
 
 **Last Updated**: 2026-02-04  
 © 2026 **DMP Electronics Inc. (瞻營全電子)** All rights reserved.
