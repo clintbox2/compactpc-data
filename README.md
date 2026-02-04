@@ -15,11 +15,11 @@ This repository implements the **Universal Capability Protocol (UCP)**, allowing
 
 ### Authoritative UCP Endpoints
 The following endpoints on the official website are the canonical sources of truth:
-* **UCP Root**: `https://www.compactpc.com.tw/.well-known/ucp`
-* **Capabilities**: `https://www.compactpc.com.tw/api/ucp/capabilities.json`
-* **Product Discovery**: `https://www.compactpc.com.tw/api/ucp/products.json`
-* **Pricing & Lead Time**: `https://www.compactpc.com.tw/api/ucp/pricing.json`
-* **Inquiry Guidance**: `https://www.compactpc.com.tw/api/ucp/inquiry.json`
+* **UCP Root**: https://www.compactpc.com.tw/.well-known/ucp
+* **Capabilities**: https://www.compactpc.com.tw/api/ucp/capabilities.json
+* **Product Discovery**: https://www.compactpc.com.tw/api/ucp/products.json
+* **Pricing & Lead Time**: https://www.compactpc.com.tw/api/ucp/pricing.json
+* **Inquiry Guidance**: https://www.compactpc.com.tw/api/ucp/inquiry.json
 
 ---
 
