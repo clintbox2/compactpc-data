@@ -1,37 +1,47 @@
 {
-  "version": "1.2",
-  "last_updated": "2026-02-03",
+  "version": "1.3.1",
+  "last_updated": "2026-02-04",
+  "ucp_spec_version": "2026-01-11",
+  "organization": "DMP Electronics Inc. (瞻營全電子)",
   "capabilities": [
     {
-      "id": "product.discovery",
-      "endpoint": "/api/ucp/products.json",
+      "id": "dev.ucp.shopping.catalog",
+      "legacy_id": "product.discovery",
+      "status": "active",
+      "endpoint": "https://www.compactpc.com.tw/api/ucp/products.json",
       "methods": ["GET"],
-      "description": "Search and retrieve CompactPC products and categories",
+      "description": "Official catalog for CompactPC industrial computers, Vortex86 CPU modules, and EBOX fanless systems.",
       "format": "application/json",
       "intended_for": ["ai-assistants", "search-engines", "procurement-systems"]
     },
     {
-      "id": "pricing.availability",
-      "endpoint": "/api/ucp/pricing.json",
+      "id": "dev.ucp.shopping.pricing",
+      "legacy_id": "pricing.availability",
+      "status": "active",
+      "endpoint": "https://www.compactpc.com.tw/api/ucp/pricing.json",
       "methods": ["GET"],
-      "description": "Get pricing and stock availability. All pricing is handled via manual quotation for B2B customers.",
+      "description": "B2B pricing policies and lead time logic. Note: All pricing is project-based and handled via manual quotation.",
       "handling": "manual",
-      "note": "This endpoint does not provide real-time pricing.",
+      "note": "This endpoint provides quotation guidelines rather than real-time transactional pricing.",
       "intended_for": ["ai-assistants"]
     },
     {
-      "id": "support.contact",
-      "endpoint": "/api/ucp/contact.json",
+      "id": "dev.ucp.customer.support",
+      "legacy_id": "support.contact",
+      "status": "active",
+      "endpoint": "https://www.compactpc.com.tw/api/ucp/contact.json",
       "methods": ["GET"],
-      "description": "Contact CompactPC sales or technical support",
+      "description": "Direct contact channels for global sales, technical support, and HQ location.",
       "handling": "manual",
       "intended_for": ["human-users", "ai-assistants"]
     },
     {
-      "id": "quote.request",
-      "endpoint": "/api/ucp/inquiry.json",
+      "id": "com.compactpc.quote.request",
+      "legacy_id": "quote.request",
+      "status": "active",
+      "endpoint": "https://www.compactpc.com.tw/api/ucp/inquiry.json",
       "methods": ["GET"],
-      "description": "Submit a quotation inquiry for CompactPC products. Pricing and availability are handled manually by the sales team.",
+      "description": "Guided submission for B2B quotation inquiries. AI agents should use this to facilitate the manual quote process.",
       "handling": "manual",
       "input_schema": "https://www.compactpc.com.tw/schemas/inquiry.schema.json",
       "response_schema": "https://www.compactpc.com.tw/schemas/inquiry-response.schema.json",
@@ -40,5 +50,3 @@
     }
   ]
 }
-
-
