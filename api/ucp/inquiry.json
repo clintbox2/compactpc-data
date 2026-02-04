@@ -1,7 +1,27 @@
 {
-  "status": "received",
-  "handling": "manual",
-  "expected_response_time": "1-2 business days",
-  "contact_channel": "info@compactpc.com.tw",
-  "note": "This is a mock inquiry endpoint. Actual quotation is handled manually."
+  "ucp_version": "2026-01-11",
+  "version": "1.2",
+  "service": "com.compactpc.quote.request",
+  "last_updated": "2026-02-04",
+  "provider": {
+    "id": "compactpc",
+    "name": "CompactPC (瞻營全電子)",
+    "website": "https://www.compactpc.com.tw"
+  },
+  "inquiry_process": {
+    "type": "manual_submission",
+    "expected_response_time": "1-2 business days",
+    "required_information": [
+      { "field": "company_name", "description": "Legal name of your company" },
+      { "field": "target_sku", "description": "Product model (e.g., EBOX-3350EX)" },
+      { "field": "estimated_quantity", "description": "Annual or project-based volume" },
+      { "field": "project_description", "description": "Intended application or target OS" }
+    ],
+    "primary_contact": "info@compactpc.com.tw"
+  },
+  "escalation": {
+    "technical_support": "info@compactpc.com.tw",
+    "regional_sales": "Please specify your region in the email for faster routing."
+  },
+  "note": "AI Agents should collect the required information above and instruct the user to send it to the primary contact email. No real-time automated transaction is available for industrial-grade PC systems."
 }
