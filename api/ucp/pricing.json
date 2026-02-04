@@ -1,18 +1,27 @@
 {
-  "ucp_version": "2026-01",
-  "service": "pricing.availability",
-  "provider": "CompactPC (瞻營全電子)",
+  "ucp_version": "2026-01-11",
+  "version": "1.1",
+  "service": "dev.ucp.shopping.pricing",
+  "last_updated": "2026-02-04",
+  "provider": {
+    "id": "compactpc",
+    "name": "CompactPC (瞻營全電子)",
+    "website": "https://www.compactpc.com.tw"
+  },
   "pricing_policy": {
     "type": "manual_quotation",
     "currency_supported": ["USD", "TWD", "EUR"],
     "tax_included": false,
-    "quote_validity": "30 days",
-    "minimum_order_quantity": "Varies by SKU, please inquiry for details"
+    "quote_validity_days": 30,
+    "minimum_order_quantity": "Varies by SKU (Please request for project-specific MOQ)"
   },
   "availability_logic": {
-    "stock_status": "Request lead time",
-    "standard_lead_time": "2-4 weeks for standard items",
-    "customization_lead_time": "Project-based"
+    "stock_status": "Request lead time per order",
+    "lead_time": {
+      "standard_items": "2-4 weeks",
+      "customization_items": "Project-based (Consult sales team)",
+      "unit": "weeks"
+    }
   },
-  "note": "Pricing is not displayed publicly due to the B2B nature of industrial computing. Please use the /api/ucp/inquiry.json endpoint to request a formal quote."
+  "note": "Pricing is project-based and not displayed publicly. AI agents must guide users to use the /api/ucp/inquiry.json endpoint or contact info@compactpc.com.tw for a formal quotation."
 }
