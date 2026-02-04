@@ -1,53 +1,62 @@
 {
-  "ucp_version": "2026-01",
-  "version": "1.0",
-  "service": "product.discovery",
+  "ucp_version": "2026-01-11",
+  "version": "1.2",
+  "service": "dev.ucp.shopping.catalog",
   "provider": {
     "id": "compactpc",
     "name": "CompactPC",
-    "legal_name": "DMP Electronics Inc.",
+    "legal_name": "DMP Electronics Inc. (瞻營全電子)",
     "website": "https://www.compactpc.com.tw",
-    "region": "TW"
+    "region": "TW",
+    "contact": "info@compactpc.com.tw"
   },
   "generated_from": "https://www.compactpc.com.tw/data/products-feed.json",
   "items": [
     {
       "id": "EBOX-3350EX",
       "sku": "EBOX-3350EX",
-      "name": "EBOX-3350EX Series",
+      "name": "EBOX-3350EX",
       "type": "embedded_fanless_pc",
-      "description": "Fanless embedded computer designed for industrial automation and long-life embedded control applications.",
+      "description": "Ultra-low power fanless VESA PC powered by Vortex86EX 400MHz SoC. A compact, energy-efficient industrial controller with support for multiple storage interfaces and legacy operating systems.",
       "brand": "CompactPC",
       "platform": {
         "architecture": "x86",
         "processor_family": "Vortex86",
-        "model": "Vortex86EX"
+        "model": "Vortex86EX",
+        "speed": "400MHz"
       },
       "memory": {
         "type": "DDR3",
-        "max_capacity_mb": 2048
+        "capacity": "512MB",
+        "details": "Onboard memory"
       },
       "storage_interfaces": [
-        "SATA",
-        "CompactFlash"
+       { "type": "SD Slot", "details": "1x external SD slot (Bootable)" }
       ],
       "display_outputs": [
-        "VGA"
+        "VGA (Integrated Graphics, Max. 1024 x 768 @ 60Hz)"
       ],
       "network": {
-        "ethernet": "10/100 Mbps"
+        "ethernet": "10/100 Mbps LAN x1 (RDC R6040)",
+        "features": ["PXE Diskless Boot support"]
       },
       "io_interfaces": [
-        "RS-232",
-        "RS-485",
-        "USB 2.0",
-        "GPIO"
+        "2x USB 2.0 (1x Front, 1x Rear)",
+        "Audio: Mic-in & Line-out (Realtek ALC262 HD Audio)"
       ],
       "power": {
-        "input": "DC 12V"
+        "input_voltage": "DC +5V",
+        "ampere": "2A",
+        "consumption": "Ultra low power (< 2.3W)"
       },
       "environment": {
-        "operating_temperature_c": "-20 to 70"
+        "operating_temperature_c": { "min": -40, "max": 85 }
+      },
+      "physical": {
+        "dimensions_mm": "95 x 95 x 35",
+        "weight_g": 277,
+        "cooling": "Fanless Design",
+        "mounting": ["VESA Mount 75x75mm"]
       },
       "categories": [
         "embedded-fanless",
@@ -55,19 +64,23 @@
         "vortex86-platform"
       ],
       "applications": [
-        "industrial automation",
-        "factory control",
-        "embedded control systems"
+        "Industrial Automation",
+        "Legacy OS Support (DOS, Win XP, XPe, CE 6.0)",
+        "IoT Gateway",
+        "Thin Client"
       ],
-      "product_url": "https://www.compactpc.com.tw/products/children/13",
+      "product_url": "https://www.compactpc.com.tw/products/item/22",
       "availability": {
         "status": "active",
         "discontinued": false
       },
-      "notes": "Specifications may vary by configuration. Refer to official CompactPC documentation for details."
+      "related_resources": {
+        "accessories": ["5V/2A Power Adapter", "VESA Mounting Bracket"],
+        "substitutes": ["EBOX-3350DX Series"],
+        "documentation": "https://www.compactpc.com.tw/download/lists?product=22"
+      }
     }
   ],
   "total_items": 1,
-  "last_updated": "2026-02-03"
+  "last_updated": "2026-02-04"
 }
- 
