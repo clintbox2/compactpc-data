@@ -47,11 +47,11 @@ compactpc-data/
 
 For developers and system integrators, authoritative raw data is accessible via GitHub:
 
-* **Products**: [products.json](./api/ucp/products.json)
-* **Capabilities**: [capabilities.json](./api/ucp/capabilities.json)
-* **Pricing Policy**: [pricing.json](./api/ucp/pricing.json)
-* **Contact Info**: [contact.json](./api/ucp/contact.json)
-* **Inquiry Guide**: [inquiry.json](./api/ucp/inquiry.json)
+* **Products**: [products.json](https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/products.json)
+* **Capabilities**: [capabilities.json](https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/capabilities.json)
+* **Pricing Policy**: [pricing.json](https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/pricing.json)
+* **Contact Info**: [contact.json](https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/contact.json)
+* **Inquiry Guide**: [inquiry.json](https://github.com/clintbox2/compactpc-data/blob/main/api/ucp/inquiry.json)
 
 ---
 
