@@ -26,7 +26,7 @@ The following endpoints on the official website are the canonical sources of tru
 ---
 
 ## 📂 Repository Structure
-
+```
 compactpc-data/
 ├─ .well-known/
 │  └─ ucp                 # UCP Trust Root
@@ -41,7 +41,7 @@ compactpc-data/
 │  └─ inquiry.schema.json
 ├─ ai.txt                 # AI Agent Crawler Policy
 └─ README.md              # This file
-
+```
 ---
 
 ## 📦 Available Datasets (Raw Access)
