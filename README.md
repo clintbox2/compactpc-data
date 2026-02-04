@@ -13,6 +13,8 @@ DMP Electronics Inc. is the manufacturer and brand owner of **DMP Industrial PC*
 
 This repository implements the **Universal Capability Protocol (UCP)**, allowing AI agents (like ChatGPT, Claude, and Gemini) to discover, search, and initiate inquiries for CompactPC products autonomously.
 
+---
+
 ### Authoritative UCP Endpoints
 The following endpoints on the official website are the canonical sources of truth:
 * **UCP Root**: https://www.compactpc.com.tw/.well-known/ucp
