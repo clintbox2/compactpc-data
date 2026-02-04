@@ -27,7 +27,6 @@ The following endpoints on the official website are the canonical sources of tru
 
 ## 📂 Repository Structure
 
-```text
 compactpc-data/
 ├─ .well-known/
 │  └─ ucp                 # UCP Trust Root
