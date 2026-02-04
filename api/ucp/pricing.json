@@ -1,0 +1,18 @@
+{
+  "ucp_version": "2026-01",
+  "service": "pricing.availability",
+  "provider": "CompactPC (瞻營全電子)",
+  "pricing_policy": {
+    "type": "manual_quotation",
+    "currency_supported": ["USD", "TWD", "EUR"],
+    "tax_included": false,
+    "quote_validity": "30 days",
+    "minimum_order_quantity": "Varies by SKU, please inquiry for details"
+  },
+  "availability_logic": {
+    "stock_status": "Request lead time",
+    "standard_lead_time": "2-4 weeks for standard items",
+    "customization_lead_time": "Project-based"
+  },
+  "note": "Pricing is not displayed publicly due to the B2B nature of industrial computing. Please use the /api/ucp/inquiry.json endpoint to request a formal quote."
+}

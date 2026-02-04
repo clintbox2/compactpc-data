@@ -1,0 +1,27 @@
+{
+  "ucp_version": "2026-01",
+  "service": "support.contact",
+  "provider": {
+    "name": "CompactPC (DMP Electronics Inc.)",
+    "legal_name": "瞻營全電子股份有限公司",
+    "website": "https://www.compactpc.com.tw"
+  },
+  "contact_points": [
+    {
+      "department": "Global Sales",
+      "email": "info@compactpc.com.tw",
+      "phone": "+886-2-22980770",
+      "languages": ["English", "Mandarin", "Japanese"]
+    },
+    {
+      "department": "Technical Support",
+      "email": "info@compactpc.com.tw",
+      "description": "Technical assistance for Vortex86 platforms and EBOX series."
+    }
+  ],
+  "office_hours": "Monday - Friday, 08:30 - 17:30 (UTC+8)",
+  "headquarters": {
+    "address": "No.15, Wugong 5th Rd., Xinzhuang district, New Taipei City 248020, Taiwan",
+    "region": "TW"
+  }
+}

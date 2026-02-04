@@ -1,0 +1,44 @@
+{
+  "version": "1.2",
+  "last_updated": "2026-02-03",
+  "capabilities": [
+    {
+      "id": "product.discovery",
+      "endpoint": "/api/ucp/products.json",
+      "methods": ["GET"],
+      "description": "Search and retrieve CompactPC products and categories",
+      "format": "application/json",
+      "intended_for": ["ai-assistants", "search-engines", "procurement-systems"]
+    },
+    {
+      "id": "pricing.availability",
+      "endpoint": "/api/ucp/pricing.json",
+      "methods": ["GET"],
+      "description": "Get pricing and stock availability. All pricing is handled via manual quotation for B2B customers.",
+      "handling": "manual",
+      "note": "This endpoint does not provide real-time pricing.",
+      "intended_for": ["ai-assistants"]
+    },
+    {
+      "id": "support.contact",
+      "endpoint": "/api/ucp/contact.json",
+      "methods": ["GET"],
+      "description": "Contact CompactPC sales or technical support",
+      "handling": "manual",
+      "intended_for": ["human-users", "ai-assistants"]
+    },
+    {
+      "id": "quote.request",
+      "endpoint": "/api/ucp/inquiry.json",
+      "methods": ["GET"],
+      "description": "Submit a quotation inquiry for CompactPC products. Pricing and availability are handled manually by the sales team.",
+      "handling": "manual",
+      "input_schema": "https://www.compactpc.com.tw/schemas/inquiry.schema.json",
+      "response_schema": "https://www.compactpc.com.tw/schemas/inquiry-response.schema.json",
+      "mock_response": "https://www.compactpc.com.tw/api/ucp/inquiry.json",
+      "intended_for": ["ai-agents", "procurement-automation"]
+    }
+  ]
+}
+
+
